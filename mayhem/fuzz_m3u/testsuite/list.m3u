@@ -1,0 +1,8 @@
+#EXTM3U
+#EXTINF:123,Artist - A
+a.mp3
+b.flac
+sub/c.opus
+sub/d e.m4a
+a.mp3
+missing.mp3

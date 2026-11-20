@@ -1,0 +1,9 @@
+project: savantenvs/kew
+target: fuzz_libcache
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_libcache/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_libcache
+    libfuzzer: true
+    timeout: 5

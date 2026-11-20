@@ -1,0 +1,9 @@
+project: savantenvs/kew
+target: fuzz_tags
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_tags/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_tags
+    libfuzzer: true
+    timeout: 5
